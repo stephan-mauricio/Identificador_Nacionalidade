@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificador</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Conteúdo principal-->
+    <main class="principal">
+        <h1 class="titulo-principal">Identificador de identidade</h1>
+        <div class="centro">
+            <form action="#">
+                Nome Completo: <input type="text" name="nomecompleto" id="nomecompleto"></br>
+                Filiaçâo: <input type="text" name="filiacao" id="filiacao"></br>
+                Bilhete de identidade Nº: <input type="text" name="bilhete_identidade" id="bilhete_identidade"></br>
+                Residência: <input type="text" name="residencia" id="residencia"></br>
+                Bairro: <input type="text" name="bairro" id="bairro"></br>
+                Natural de: <input type="text" name="naturalidade" id="naturalidade"></br>
+                Provincia  da: <input type="text" name="provincia" id="provincia"></br>
+                Data de Nascimento: <input type="date" name="data_nascimento" id="data_nascimento"></br>
+                Sexo: <input type="text" name="sexo" id="sexo"></br>                                                    
+                <label for="sexo">Feminino</label></br>
+                Altura(m): <input type="number" name="altura" id="altura"></br>
+                Emitido em: <input type="date" name="data_emisao" id="data_emisao"></br>
+                Válido até: <input type="date" name="data_validade" id="data_validade">
+
+                <input type="button" value="Verificar" onclick="verificar()">
+            </form>
+        </div>
+
+        <div id="dadosprocessados">
+
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
