@@ -1,40 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Identificador</title>
+    <title>
+        Identificador
+    </title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <!--Conteúdo principal-->
-    <main class="principal">
+    <section class="principal">
         <h1 class="titulo-principal">Identificador de identidade</h1>
-        <div class="centro">
             <form action="#">
-                Nome Completo: <input type="text" name="nomecompleto" id="nomecompleto"></br>
-                Filiaçâo: <input type="text" name="filiacao" id="filiacao"></br>
-                Bilhete de identidade Nº: <input type="text" name="bilhete_identidade" id="bilhete_identidade"></br>
-                Residência: <input type="text" name="residencia" id="residencia"></br>
-                Bairro: <input type="text" name="bairro" id="bairro"></br>
-                Natural de: <input type="text" name="naturalidade" id="naturalidade"></br>
-                Provincia  da: <input type="text" name="provincia" id="provincia"></br>
-                Data de Nascimento: <input type="date" name="data_nascimento" id="data_nascimento"></br>
-                Sexo: <input type="text" name="sexo" id="sexo"></br>                                                    
-                <label for="sexo">Feminino</label></br>
-                Altura(m): <input type="number" name="altura" id="altura"></br>
-                Emitido em: <input type="date" name="data_emisao" id="data_emisao"></br>
-                Válido até: <input type="date" name="data_validade" id="data_validade">
+                <p>
+                    Nome Completo <input type="text" name="nomecompleto" id="nomecompleto">
+                </p>
+                
+                <p>
+                    Filiaçâo <input type="text" name="filiacao" id="filiacao">
+                </p>
+                
+                <p>
+                   Bilhete de identidade Nº <input type="text" name="bilhete_identidade"  id="bilhete_identidade">
+                </p>
 
-                <input type="button" value="Verificar" onclick="verificar()">
+                <p>
+                    Residência <input type="text" name="residencia" id="residencia">
+                </p>
+                
+                <p>
+                    Bairro <input type="text" name="bairro" id="bairro">
+                </p>
+                
+                <p>
+                    Natural de <input type="text" name="naturalidade" id="naturalidade">
+                </p>
+                
+                <p>
+                    Provincia  da <input type="text" name="provincia" id="provincia">
+                </p>
+                
+                <p>
+                    Data de Nascimento <input type="date" name="data_nascimento" id="data_nascimento">
+                </p>
+                
+                <p>
+                    Sexo <input type="text" name="sexo" id="sexo">
+                </p>
+                
+                <p>
+                    Altura(m): <input type="number" name="altura" id="altura">
+                </p> 
+
+                <p>
+                    Emitido em: <input type="date" name="data_emisao" id="data_emissao"></p>                    
+                <p>
+                    Válido até: <input type="date" name="data_validade" id="data_caducidade">
+                </p> 
+
+                <input type="submit" value="Verificar" onclick="verificar()" class="verificar">     
             </form>
-        </div>
 
-        <div id="dadosprocessados">
+    </section> 
 
-        </div>
-    </main>
+    <section class="principal">
+        <h2 class="titulo-principal">Dados Verificados</h2>
+                <p id="nome_processado">
+                    Nome Completo
+                </p>
 
+                <p id="filiacao_processado">
+                    Filiaçâo
+                </p>
+
+                <p id="bilhete_processado">
+                    Bilhete de identidade Nº
+                </p> 
+
+                <p id="residencia_processado">
+                    Residência
+                </p> 
+
+                <p id="bairro_processado">
+                    Bairro
+                </p>
+
+                <p id="naturalidade_processado">
+                    Natural de
+                </p>
+
+                <p id="provincia_processado">
+                    Provincia da
+                </p> 
+
+                <p id="nascimento_processado">
+                    Data de Nascimento
+                </p>
+
+                <p id="sexo_processado">
+                    Sexo
+                </p>   
+
+                <p id="altura_processado">
+                    Altura(m)
+                </p> 
+
+                <p id="emitido_processado">
+                    Emitido em
+                </p> 
+
+                <p id="data_caducidade_processado">
+                    Válido até
+                </p>
+                
+                <p class="dadosverificados"></p>
+    </section>
+
+    <!--Caminho do arquivo script-->
     <script src="js/script.js"></script>
 </body>
 </html>

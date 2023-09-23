@@ -1,7 +1,77 @@
+/*Estilização do HTML*/
 body {
     font: normal 17pt Arial;
+    background-color: #3e84df;
+    color: white;
+}
+
+h1, h2.titulo-principal {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+section.principal {
+    border: 9px solid #3e97dfbb;
+    border-radius: 19px;
+    box-shadow: 2px 2px 10px;
+    width: 500px;
+    padding-left: 5%;
+    margin: 0 auto;
 }
 
 input {
     font: normal 16pt Arial;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+}
+
+input#nomecompleto {
+    width: 500px;
+}
+
+input#filiacao {
+    width: 500px;
+}
+
+input#residencia {
+    width: 120px;
+}
+
+input#bairro {
+    width: 120px;
+}
+
+input#naturalidade {
+    width: 120px;
+}
+
+input#provincia {
+    width: 120px;
+}
+
+input#altura {
+    width: 64px;
+}
+
+input#sexo {
+    width: 100px;
+}
+
+input.verificar {
+    text-transform: uppercase;
+    background-color: #186ff3;
+    padding: 10px;
+    color: white;
+    display: block;
+    margin: 20px 25%;
+}
+
+input.verificar:hover {
+    background-color: #3e51dfa0;
+    transition: 0.5s;
+}
+
+p.dadosverificados {
+    text-align: center;
 }
